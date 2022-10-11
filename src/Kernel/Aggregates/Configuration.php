@@ -697,7 +697,7 @@ final class Configuration extends AbstractEntity
      * which is a value of any type other than a resource.
      * @since  5.4.0
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return [
             "enabled" => $this->enabled,
