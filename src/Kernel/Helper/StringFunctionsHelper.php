@@ -158,7 +158,7 @@ class StringFunctionsHelper
             preg_replace(
                 $pattern,
                 ' ',
-                $text
+                ($text)??''
             )
         );
 

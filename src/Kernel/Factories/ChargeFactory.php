@@ -142,7 +142,7 @@ class ChargeFactory implements FactoryInterface
             );
             $tranAcquirerName = explode(',', $dbData['tran_acquirer_name']);
             $tranAcquirerMessage = explode(',', $dbData['tran_acquirer_message']);
-            $tranBoletoUrl = explode(',', $dbData['tran_boleto_url']);
+            $tranBoletoUrl = explode(',', ($dbData['tran_boleto_url'])??'');
             $tranCardData = explode('---', $dbData['tran_card_data']);
             $tranData = explode('---', $dbData['tran_data']);
 
